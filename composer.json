@@ -1,12 +1,23 @@
 {
   "name": "10up/figma-block",
+  "description": "Add a block to render a Figma file.",
   "type": "wordpress-plugin",
+  "license": "GPLv2",
   "authors": [
     {
       "name": "10up",
       "email": "info@10up.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "FigmaBlock\\": "includes/FigmaBlock/"
+    },
+    "files": [
+      "includes/FigmaBlock/Helpers.php",
+      "includes/FigmaBlock/Blocks.php"
+    ]
+  },
   "require": {
     "php": ">=7.4"
   },

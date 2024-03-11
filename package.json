@@ -39,9 +39,9 @@
   "10up-toolkit": {
     "useBlockAssets": true,
     "entry": {
-      "inline-icon": "./src/icon-block/assets/js/inline-icon.js",
-      "inline-icon-css": "./src/icon-block/assets/css/inline-icon.css",
-      "inline-icon-editor-css": "./src/icon-block/assets/css/inline-icon-editor.css"
+      "inline-icon": "./src/assets/js/inline-icon.js",
+      "inline-icon-css": "./src/assets/css/inline-icon.css",
+      "inline-icon-editor-css": "./src/assets/css/inline-icon-editor.css"
     },
     "paths": {
       "blocksDir": "./src/"
