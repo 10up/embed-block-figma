@@ -1,0 +1,6 @@
+{
+    "extends": ["@10up/eslint-config/wordpress"],
+	"rules": {
+		"@wordpress/no-unsafe-wp-apis": "off"
+	}
+}
