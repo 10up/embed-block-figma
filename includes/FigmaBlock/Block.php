@@ -18,6 +18,7 @@ function setup() {
 	);
 
 	add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\\block_editor_assets' );
+	add_filter( 'rest_request_after_callbacks', __NAMESPACE__ . '\\filter_rest_request_after_callbacks', 10, 3 );
 }
 
 /**
@@ -66,4 +67,36 @@ function block_editor_assets() {
 		$js_asset['version'],
 		false
 	);
+}
+
+/**
+ * Filters the response after executing any REST API callbacks.
+ *
+ * We do this so we can change the embed handler from the default to our
+ * custom Figma one.
+ *
+ * @param \WP_REST_Response|\WP_HTTP_Response|\WP_Error|mixed $response Result to send to the client.
+ * @param array                                               $handler  Route handler used for the request.
+ * @param \WP_REST_Request                                    $request  Request used to generate the response.
+ * @return \WP_REST_Response|\WP_HTTP_Response|\WP_Error|mixed Result to send to the client.
+ */
+function filter_rest_request_after_callbacks( $response, array $handler, \WP_REST_Request $request ) {
+	// Only run this on the oEmbed proxy endpoint.
+	if ( strpos( $request->get_route(), '/oembed/1.0/proxy' ) === false ) {
+		return $response;
+	}
+
+	$params = $request->get_params();
+
+	// Ensure we have a Figma URL.
+	if ( ! isset( $params['url'] ) || strpos( $params['url'], 'figma.com' ) === false ) {
+		return $response;
+	}
+
+	// Set the proper provider name.
+	if ( is_object( $response ) && isset( $response->provider_name ) ) {
+		$response->provider_name = 'Figma';
+	}
+
+	return $response;
 }
