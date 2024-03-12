@@ -42,7 +42,8 @@ class Plugin {
 	 * Initializes the plugin.
 	 */
 	public function init() {
-		Block\setup();
+		$block = new Block();
+		$block->setup();
 	}
 
 	/**

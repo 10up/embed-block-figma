@@ -70,6 +70,16 @@ if ( ! site_meets_php_requirements() ) {
 // Require Composer autoloader if it exists.
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	require_once __DIR__ . '/vendor/autoload.php';
+} else {
+	add_action(
+		'admin_notices',
+		function () {
+			$message = __( 'Error: Please run $ composer install in the Figma Block plugin directory.', 'classifai' );
+			printf( '<div class="%1$s"><p>%2$s</p></div>', 'notice notice-error', esc_html( $message ) );
+			error_log( esc_html( $message ) ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
+		}
+	);
+	return;
 }
 
 $is_local_env = in_array( wp_get_environment_type(), [ 'local', 'development' ], true );

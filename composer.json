@@ -12,10 +12,7 @@
   "autoload": {
     "psr-4": {
       "FigmaBlock\\": "includes/FigmaBlock/"
-    },
-    "files": [
-      "includes/FigmaBlock/Block.php"
-    ]
+    }
   },
   "require": {
     "php": ">=7.4"
