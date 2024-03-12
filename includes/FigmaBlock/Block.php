@@ -18,7 +18,7 @@ class Block {
 	public function setup() {
 		wp_embed_register_handler(
 			'figma',
-			'#https:\/\/[\w\.-]+\.?figma.com\/([\w-]+)\/([0-9a-zA-Z]{22,128})(?:\/.*)?#i',
+			'#https:\/\/[\w.-]+\.?figma.com\/([\w-]+)\/([0-9a-zA-Z]{22,128})(?:\/.*)?#i',
 			[ $this, 'embed_handler' ]
 		);
 
