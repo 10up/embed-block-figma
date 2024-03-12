@@ -44,7 +44,7 @@ function embed_handler( array $matches, array $attr, string $url ) {
 
 	// Build the embed iframe.
 	$embed = sprintf(
-		'<iframe src="%1$s" height="%2$spx" width="%3$spx" allowfullscreen />',
+		'<iframe src="%1$s" height="%2$d" width="%3$d" frameborder="0" allowfullscreen></iframe>',
 		esc_url( $url ),
 		esc_attr( $attr['height'] ?? 450 ),
 		esc_attr( $attr['width'] ?? 800 )
