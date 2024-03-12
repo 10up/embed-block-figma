@@ -1,11 +1,15 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "figma/figma-block",
+  "name": "figma/embed",
   "title": "Figma",
   "category": "embed",
   "description": "A Figma embed block.",
   "attributes": {
+    "url": {
+			"type": "string",
+			"__experimentalRole": "content"
+		}
   },
   "supports": {
     "html": false

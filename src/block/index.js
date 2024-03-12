@@ -3,8 +3,8 @@ import edit from './edit';
 import block from './block.json';
 import { Icon } from './icon';
 
-registerBlockType(block, {
-	icon: Icon,
-	edit,
-	save: () => null,
-});
+// registerBlockType(block, {
+// 	icon: Icon,
+// 	edit,
+// 	save: () => null,
+// });
