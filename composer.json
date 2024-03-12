@@ -14,8 +14,7 @@
       "FigmaBlock\\": "includes/FigmaBlock/"
     },
     "files": [
-      "includes/FigmaBlock/Helpers.php",
-      "includes/FigmaBlock/Blocks.php"
+      "includes/FigmaBlock/Block.php"
     ]
   },
   "require": {

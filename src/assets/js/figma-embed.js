@@ -13,7 +13,7 @@ registerBlockVariation(
 		title: 'Figma',
 		description: __('Embed Figma designs.'),
 		icon: Icon,
-		patterns: [ /^https:\/\/[\w\.-]+\.?figma.com\/([\w-]+)\/([0-9a-zA-Z]{22,128})(?:\/.*)?$/i ],
+		patterns: [ /https:\/\/[\w\.-]+\.?figma.com\/([\w-]+)\/([0-9a-zA-Z]{22,128})(?:\/.*)?$/i ],
 		attributes: {
 			providerNameSlug: 'figma',
 			responsive: true

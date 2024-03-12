@@ -37,12 +37,9 @@
     ]
   },
   "10up-toolkit": {
-    "useBlockAssets": true,
+    "useBlockAssets": false,
     "entry": {
       "figma-embed": "./src/assets/js/figma-embed.js"
-    },
-    "paths": {
-      "blocksDir": "./src/"
     }
   },
   "dependencies": {
