@@ -1,3 +1,6 @@
+/**
+ * WordPress dependencies
+ */
 import { SVG, Path, Rect } from '@wordpress/components';
 
 export const Icon = () => (
