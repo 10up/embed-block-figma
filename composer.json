@@ -18,7 +18,8 @@
     "php": ">=7.4"
   },
   "require-dev": {
-    "10up/phpcs-composer": "dev-trunk"
+    "10up/phpcs-composer": "dev-trunk",
+    "sirbrillig/phpcs-changed": "^2.11"
   },
   "scripts": {
     "lint": "phpcs .",
