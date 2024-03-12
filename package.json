@@ -39,12 +39,13 @@
   "10up-toolkit": {
     "useBlockAssets": true,
     "entry": {
-      "inline-icon": "./src/assets/js/inline-icon.js",
-      "inline-icon-css": "./src/assets/css/inline-icon.css",
-      "inline-icon-editor-css": "./src/assets/css/inline-icon-editor.css"
+      "figma-embed": "./src/assets/js/figma-embed.js"
     },
     "paths": {
       "blocksDir": "./src/"
     }
+  },
+  "dependencies": {
+    "@wordpress/icons": "^9.44.0"
   }
 }

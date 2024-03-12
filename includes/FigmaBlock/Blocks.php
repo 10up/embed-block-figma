@@ -11,13 +11,9 @@ namespace FigmaBlock\Blocks;
  * Set up blocks.
  */
 function setup() {
-	$n = function ( $function_name ) {
-		return __NAMESPACE__ . "\\$function_name";
-	};
+	add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\\block_editor_assets' );
 
-	add_action( 'enqueue_block_assets', $n( 'blocks_styles' ) );
-
-	register_blocks();
+	// register_blocks();
 }
 
 /**
@@ -34,4 +30,14 @@ function register_blocks() {
 /**
  * Enqueue JavaScript/CSS for blocks.
  */
-function blocks_styles() {}
+function block_editor_assets() {
+	$js_asset = require_once FIGMA_BLOCK_DIST_PATH . 'js/figma-embed.asset.php';
+
+	wp_enqueue_script(
+		'figma-embed-block',
+		FIGMA_BLOCK_DIST_URL . 'js/figma-embed.js',
+		$js_asset['dependencies'],
+		$js_asset['version'],
+		false
+	);
+}
