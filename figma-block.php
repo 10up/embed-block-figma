@@ -78,7 +78,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	add_action(
 		'admin_notices',
 		function () {
-			$message = __( 'Error: Please run $ composer install in the Figma Block plugin directory.', 'classifai' );
+			$message = __( 'Error: Please run $ composer install in the Figma Block plugin directory.', 'figma-block' );
 			printf( '<div class="%1$s"><p>%2$s</p></div>', 'notice notice-error', esc_html( $message ) );
 			error_log( esc_html( $message ) ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
 		}
