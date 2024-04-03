@@ -18,8 +18,9 @@
     "php": ">=7.4"
   },
   "require-dev": {
-    "10up/phpcs-composer": "dev-trunk",
-    "sirbrillig/phpcs-changed": "^2.11"
+    "10up/phpcs-composer": "^3.0",
+    "sirbrillig/phpcs-changed": "^2.11",
+    "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
   },
   "scripts": {
     "lint": "phpcs .",
