@@ -7,13 +7,13 @@ import { registerBlockVariation } from '@wordpress/blocks';
 /**
  * Internal dependencies
  */
-import { IconBlack } from './icon';
+import { IconColor } from './icon';
 
 registerBlockVariation('core/embed', {
 	name: 'figma',
 	title: 'Figma',
 	description: __('Embed Figma designs.'),
-	icon: { src: IconBlack, foreground: 'transparent' },
+	icon: { src: IconColor, foreground: 'transparent' },
 	patterns: [/https:\/\/[\w.-]+\.?figma.com\/([\w-]+)\/([0-9a-zA-Z]{22,128})(?:\/.*)?$/i],
 	attributes: {
 		providerNameSlug: 'figma',
