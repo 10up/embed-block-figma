@@ -24,6 +24,7 @@ class Block {
 
 		add_action( 'enqueue_block_editor_assets', [ $this, 'block_editor_assets' ] );
 		add_filter( 'rest_request_after_callbacks', [ $this, 'filter_rest_request_after_callbacks' ], 10, 3 );
+		add_filter( 'embed_defaults', [ $this, 'embed_defaults_for_figma_block' ], 10, 2 );
 	}
 
 	/**
@@ -104,5 +105,31 @@ class Block {
 		}
 
 		return $response;
+	}
+
+	/**
+	 * Modify the embed default size for the case of Figma Embed blocks to allow supporting wide view using the native
+	 * aspect ratio classes provided by the editor.
+	 *
+	 * @param int[]  $size The array of dimensions for the size
+	 * @param string $url  The URL that should be embedded.
+	 *
+	 * @return int[]
+	 */
+	public function embed_defaults_for_figma_block( $size, $url ) {
+		if ( empty( $url ) ) {
+			return $size;
+		}
+
+		$domain = wp_parse_url( $url, PHP_URL_HOST );
+
+		if ( 'www.figma.com' !== $domain ) {
+			return $size;
+		}
+
+		return [
+			'width'  => 600,
+			'height' => 452,
+		];
 	}
 }
