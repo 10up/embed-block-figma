@@ -8,7 +8,7 @@ Stable tag:        0.1.0
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily display Figma files using an Embed block.
+Display Figma files using an Embed block.
 
 == Description ==
 

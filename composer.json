@@ -1,6 +1,6 @@
 {
   "name": "10up/figma-block",
-  "description": "Add a block to render a Figma file.",
+  "description": "Adds a Figma embed block to the WordPress Block Editor.",
   "type": "wordpress-plugin",
   "license": "GPLv2",
   "authors": [
