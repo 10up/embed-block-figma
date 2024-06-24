@@ -29,3 +29,6 @@ Once the plugin is installed and activated, you should see a new Figma Embed blo
 Assuming it's a valid URL, the block will automatically fetch the Figma file and display it in the editor. Once saved, this will also display on the front-end.
 
 == Changelog ==
+
+= 0.1.0 - 2024-06-25 =
+* Initial private plugin release.
