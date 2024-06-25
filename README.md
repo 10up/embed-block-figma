@@ -1,6 +1,6 @@
 # Figma Block
 
-> Easily display Figma files using an Embed block.
+> Adds a Figma embed block to the WordPress Block Editor.
 
 [![Support Level](https://img.shields.io/badge/support-beta-blueviolet.svg)](#support-level) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v6.5%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/block-catalog.svg)](https://github.com/10up/block-catalog/blob/develop/LICENSE.md)
 
