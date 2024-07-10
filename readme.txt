@@ -1,12 +1,10 @@
 === Block Catalog ===
-Contributors:      10up, dkotter
+Contributors:      10up, dkotter, jeffpaul
 Tags:              gutenberg, figma, embed, blocks, custom blocks
-Requires at least: 6.4
 Tested up to:      6.5
-Requires PHP:      7.4
 Stable tag:        0.1.0
-License:           GPLv2 or later
-License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+License:           GPL-2.0-or-later
+License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
 
 Display Figma files using an Embed block.
 
@@ -14,13 +12,14 @@ Display Figma files using an Embed block.
 
 * Embed a Figma file using a block in the WordPress editor.
 * Paste a Figma URL on a new line in the Block Editor to automatically convert it to a Figma Embed block.
+* Block settings allow for altering margins of rendered Figma file embed
 
 == Screenshots ==
 
-1. The Figma Embed block.
-2. The rendered Figma Embed block in the admin.
-3. The block settings prior to rendering.
-4. Front-end rendering of the block.
+1. The Figma Embed block with sample URL pre-embed.
+2. The rendered Figma Embed block in the editor / admin.
+3. The Figma Embed block settings prior to rendering in the editor / admin.
+4. Front-end rendering of the Figma Embed block.
 
 == Getting Started ==
 
