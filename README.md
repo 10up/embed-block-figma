@@ -4,16 +4,6 @@
 
 [![Support Level](https://img.shields.io/badge/support-beta-blueviolet.svg)](#support-level) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v6.5%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/block-catalog.svg)](https://github.com/10up/block-catalog/blob/develop/LICENSE.md)
 
-## Table of Contents
-
-* [Features](#features)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Getting Started](#getting-started)
-* [Support](#support-level)
-* [Changelog](#changelog)
-* [Contributing](#contributing)
-
 ## Features
 
 * Embed a Figma file using a block in the WordPress editor.
