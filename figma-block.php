@@ -3,15 +3,15 @@
  * Plugin Name:       Figma Block
  * Plugin URI:        https://10up.com
  * Description:       Adds a Figma embed block to the WordPress Block Editor.
- * Author:            10up
- * Author URI:        https://10up.com
- * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       figma-block
- * Domain Path:       /languages
- * Version:           0.1.0
+ * Version:           0.2.0
  * Requires at least: 6.4
  * Requires PHP:      7.4
+ * Author:            10up
+ * Author URI:        https://10up.com
+ * License:           GPL-2.0-or-later
+ * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
+ * Text Domain:       figma-block
+ * Domain Path:       /languages
  *
  * @package FigmaBlock
  */
@@ -21,7 +21,7 @@ namespace FigmaBlock;
 use function TenUpToolkit\set_dist_url_path;
 
 // Useful global constants.
-define( 'FIGMA_BLOCK_VERSION', '0.1.0' );
+define( 'FIGMA_BLOCK_VERSION', '0.2.0' );
 define( 'FIGMA_BLOCK_URL', plugin_dir_url( __FILE__ ) );
 define( 'FIGMA_BLOCK_PATH', plugin_dir_path( __FILE__ ) );
 define( 'FIGMA_BLOCK_INC', FIGMA_BLOCK_PATH . 'includes/' );

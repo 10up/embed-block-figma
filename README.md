@@ -1,23 +1,19 @@
-# Figma Block
+# Figma Block for WordPress
 
 > Adds a Figma embed block to the WordPress Block Editor.
 
 [![Support Level](https://img.shields.io/badge/support-beta-blueviolet.svg)](#support-level) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v6.5%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/block-catalog.svg)](https://github.com/10up/block-catalog/blob/develop/LICENSE.md)
+[![Dependency Review](https://github.com/10up/figma-block/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/dependency-review.yml) [![PHP Compatibility](https://github.com/10up/figma-block/actions/workflows/php-compat.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/php-compat.yml) [![PHP Linting](https://github.com/10up/figma-block/actions/workflows/phpcs.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/phpcs.yml) [![JS Linting](https://github.com/10up/figma-block/actions/workflows/eslint.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/eslint.yml)
 
-## Table of Contents
-
-* [Features](#features)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Getting Started](#getting-started)
-* [Support](#support-level)
-* [Changelog](#changelog)
-* [Contributing](#contributing)
+![Screenshot of the rendered Figma Embed block in the editor / admin](.wordpress-org/screenshot-2.png)
 
 ## Features
 
 * Embed a Figma file using a block in the WordPress editor.
 * Paste a Figma URL on a new line in the Block Editor to automatically convert it to a Figma Embed block.
+* Block settings allow for altering margins of rendered Figma file embed
+
+![Screenshot of the Figma Embed block settings prior to rendering in the editor / admin](.wordpress-org/screenshot-3.png)
 
 ## Requirements
 
@@ -33,9 +29,11 @@
 
 Once the plugin is installed and activated, you should see a new Figma Embed block. Insert this block into your content and enter the URL of the Figma file you want to embed.
 
+![Screenshot of Figma Embed block with sample URL pre-embed](.wordpress-org/screenshot-1.png)
+
 Assuming it's a valid URL, the block will automatically fetch the Figma file and display it in the editor. Once saved, this will also display on the front-end.
 
-![Screenshot of Figma Embed block](.wordpress-org/screenshot-1.png)
+![Screenshot of the front-end rendering of the Figma Embed block](.wordpress-org/screenshot-4.png)
 
 ## Support Level
 
