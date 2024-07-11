@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Figma Block
- * Plugin URI:        https://10up.com
+ * Plugin URI:        https://github.com/10up/figma-block
  * Description:       Adds a Figma embed block to the WordPress Block Editor.
  * Version:           0.2.0
  * Requires at least: 6.4
