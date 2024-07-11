@@ -3,7 +3,6 @@
 /node_modules export-ignore
 /src export-ignore
 /tests export-ignore
-/vendor export-ignore
 
 /.* export-ignore
 /CHANGELOG.md export-ignore
