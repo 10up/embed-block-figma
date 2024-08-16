@@ -1,8 +1,8 @@
 {
-  "name": "10up/figma-block",
+  "name": "10up/embed-block-figma",
   "description": "Adds a Figma embed block to the WordPress Block Editor.",
   "type": "wordpress-plugin",
-  "homepage": "https://github.com/10up/figma-block",
+  "homepage": "https://github.com/10up/embed-block-figma",
   "license": "GPL-2.0-or-later",
   "authors": [
     {

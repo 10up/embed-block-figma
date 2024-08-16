@@ -50,6 +50,6 @@ class Plugin {
 	 * Load translations.
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'figma-block', false, FIGMA_BLOCK_PATH . '/languages' );
+		load_plugin_textdomain( 'embed-block-figma', false, FIGMA_BLOCK_PATH . '/languages' );
 	}
 }

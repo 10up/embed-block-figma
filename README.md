@@ -1,4 +1,4 @@
-# Figma Block for WordPress
+# Embed Block for Figma for WordPress
 
 > Adds a Figma embed block to the WordPress Block Editor.
 
