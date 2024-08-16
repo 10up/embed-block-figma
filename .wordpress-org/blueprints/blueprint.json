@@ -21,7 +21,7 @@
       "step": "installPlugin",
       "pluginZipFile": {
         "resource": "url",
-        "slug": "https://github.com/10up/figma-block/archive/refs/tags/0.2.0.zip"
+        "url": "https://github.com/10up/figma-block/archive/refs/tags/0.2.0.zip"
       },
       "options": {
         "activate": true
