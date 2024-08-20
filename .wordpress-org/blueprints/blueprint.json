@@ -1,6 +1,6 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "\/wp-admin\/post-new.php",
+  "landingPage": "\/wp-admin\/post.php?post=7&action=edit",
   "preferredVersions": {
     "php": "7.4",
     "wp": "latest"
@@ -25,6 +25,13 @@
       },
       "options": {
         "activate": true
+      }
+    },
+    {
+      "step": "importFile",
+      "file": {
+        "resource": "url",
+        "url": "https:\/\/raw.githubusercontent.com\/10up\/figma-block\/05a11e7ed51038173610e543cb02fc56024f0c1f\/.wordpress-org\/blueprints\/demo-data.xml"
       }
     }
   ]
