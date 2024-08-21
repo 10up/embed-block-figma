@@ -28,10 +28,10 @@
       }
     },
     {
-      "step": "importFile",
+      "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https:\/\/raw.githubusercontent.com\/10up\/figma-block\/05a11e7ed51038173610e543cb02fc56024f0c1f\/.wordpress-org\/blueprints\/demo-data.xml"
+        "url": "https:\/\/raw.githubusercontent.com\/10up\/figma-block\/develop/.wordpress-org\/blueprints\/demo-data.xml"
       }
     }
   ]
