@@ -2,7 +2,7 @@
 Contributors:      10up, dkotter, jeffpaul
 Tags:              gutenberg, figma, embed, blocks, custom blocks
 Tested up to:      6.6
-Stable tag:        0.2.0
+Stable tag:        0.3.0
 License:           GPL-2.0-or-later
 License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
 

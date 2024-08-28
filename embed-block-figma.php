@@ -3,7 +3,7 @@
  * Plugin Name:       Embed Block for Figma
  * Plugin URI:        https://github.com/10up/embed-block-figma
  * Description:       Adds a Figma embed block to the WordPress Block Editor.
- * Version:           0.2.0
+ * Version:           0.3.0
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            10up
@@ -21,7 +21,7 @@ namespace FigmaBlock;
 use function TenUpToolkit\set_dist_url_path;
 
 // Useful global constants.
-define( 'FIGMA_BLOCK_VERSION', '0.2.0' );
+define( 'FIGMA_BLOCK_VERSION', '0.3.0' );
 define( 'FIGMA_BLOCK_URL', plugin_dir_url( __FILE__ ) );
 define( 'FIGMA_BLOCK_PATH', plugin_dir_path( __FILE__ ) );
 define( 'FIGMA_BLOCK_INC', FIGMA_BLOCK_PATH . 'includes/' );
