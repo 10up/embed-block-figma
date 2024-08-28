@@ -41,11 +41,11 @@ Assuming it's a valid URL, the block will automatically fetch the Figma file and
 
 ## Changelog
 
-A complete listing of all notable changes to Block Catalog are documented in [CHANGELOG.md](CHANGELOG.md).
+A complete listing of all notable changes to Embed Block for Figma are documented in [CHANGELOG.md](CHANGELOG.md).
 
 ## Contributing
 
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details on our code of conduct, [CONTRIBUTING.md](CONTRIBUTING.md) for details on the process for submitting pull requests to us, and [CREDITS.md](CREDITS.md) for a listing of maintainers, contributors, and libraries for Block Catalog.
+Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details on our code of conduct, [CONTRIBUTING.md](CONTRIBUTING.md) for details on the process for submitting pull requests to us, and [CREDITS.md](CREDITS.md) for a listing of maintainers, contributors, and libraries for Embed Block for Figma.
 
 ## Like what you see?
 
