@@ -1,6 +1,6 @@
-# Figma Block for WordPress
+# Embed Block for Figma
 
-> Adds a Figma embed block to the WordPress Block Editor.
+> A Figma Block for the WordPress block editor (Gutenberg).
 
 [![Support Level](https://img.shields.io/badge/support-beta-blueviolet.svg)](#support-level) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v6.5%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/block-catalog.svg)](https://github.com/10up/block-catalog/blob/develop/LICENSE.md)
 [![Dependency Review](https://github.com/10up/figma-block/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/dependency-review.yml) [![PHP Compatibility](https://github.com/10up/figma-block/actions/workflows/php-compat.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/php-compat.yml) [![PHP Linting](https://github.com/10up/figma-block/actions/workflows/phpcs.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/phpcs.yml) [![JS Linting](https://github.com/10up/figma-block/actions/workflows/eslint.yml/badge.svg)](https://github.com/10up/figma-block/actions/workflows/eslint.yml) [![WordPress Playground Demo](https://img.shields.io/github/v/release/10up/figma-block?logo=wordpress&logoColor=FFFFFF&label=Playground%20Demo&labelColor=3858E9&color=3858E9)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/10up/figma-block/trunk/.wordpress-org/blueprints/blueprint.json)
