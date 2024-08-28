@@ -2,8 +2,8 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Figma Block 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/figma-block\n"
+"Project-Id-Version: Embed Block for Figma 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/embed-block-figma\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,10 +12,10 @@ msgstr ""
 "POT-Creation-Date: 2024-03-12T17:56:24+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
-"X-Domain: figma-block\n"
+"X-Domain: embed-block-figma\n"
 
 #. Plugin Name of the plugin
-msgid "Figma Block"
+msgid "Embed Block for Figma"
 msgstr ""
 
 #. Plugin URI of the plugin
@@ -32,6 +32,6 @@ msgid "10up"
 msgstr ""
 
 #. translators: %s: Minimum required PHP version
-#: figma-block.php:61
-msgid "The Figma Block plugin requires PHP version %s or later. Please upgrade PHP or disable the plugin."
+#: embed-block-figma.php:61
+msgid "The Embed Block for Figma plugin requires PHP version %s or later. Please upgrade PHP or disable the plugin."
 msgstr ""

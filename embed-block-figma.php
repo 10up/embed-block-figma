@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Figma Block
- * Plugin URI:        https://10up.com
+ * Plugin Name:       Embed Block for Figma
+ * Plugin URI:        https://github.com/10up/embed-block-figma
  * Description:       Adds a Figma embed block to the WordPress Block Editor.
- * Version:           0.2.0
+ * Version:           0.3.0
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            10up
  * Author URI:        https://10up.com
  * License:           GPL-2.0-or-later
  * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
- * Text Domain:       figma-block
+ * Text Domain:       embed-block-figma
  * Domain Path:       /languages
  *
  * @package FigmaBlock
@@ -21,7 +21,7 @@ namespace FigmaBlock;
 use function TenUpToolkit\set_dist_url_path;
 
 // Useful global constants.
-define( 'FIGMA_BLOCK_VERSION', '0.2.0' );
+define( 'FIGMA_BLOCK_VERSION', '0.3.0' );
 define( 'FIGMA_BLOCK_URL', plugin_dir_url( __FILE__ ) );
 define( 'FIGMA_BLOCK_PATH', plugin_dir_path( __FILE__ ) );
 define( 'FIGMA_BLOCK_INC', FIGMA_BLOCK_PATH . 'includes/' );
@@ -58,7 +58,7 @@ if ( ! site_meets_php_requirements() ) {
 					echo wp_kses_post(
 						sprintf(
 							/* translators: %s: Minimum required PHP version */
-							__( 'The Figma Block plugin requires PHP version %s or later. Please upgrade PHP or disable the plugin.', 'figma-block' ),
+							__( 'The Embed Block for Figma plugin requires PHP version %s or later. Please upgrade PHP or disable the plugin.', 'embed-block-figma' ),
 							esc_html( minimum_php_requirement() )
 						)
 					);
@@ -78,7 +78,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	add_action(
 		'admin_notices',
 		function () {
-			$message = __( 'Error: Please run $ composer install in the Figma Block plugin directory.', 'figma-block' );
+			$message = __( 'Error: Please run $ composer install in the Embed Block for Figma plugin directory.', 'embed-block-figma' );
 			printf( '<div class="%1$s"><p>%2$s</p></div>', 'notice notice-error', esc_html( $message ) );
 			error_log( esc_html( $message ) ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
 		}
