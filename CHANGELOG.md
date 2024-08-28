@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [0.3.0] - 2024-08-29
+### Added
+- WordPress.org Playground preview (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#29](https://github.com/10up/embed-block-figma/pull/29)).
+
+### Changed
+- Updated plugin name from "Figma Block" to "Embed Block for Figma" (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#28](https://github.com/10up/embed-block-figma/pull/28), [#31](https://github.com/10up/embed-block-figma/pull/31)).
+
+### Security
+- Bump `webpack` from 5.90.3 to 5.94.0 (props [@dependabot](https://github.com/apps/dependabot), [@dkotter](https://github.com/dkotter) via [#30](https://github.com/10up/embed-block-figma/pull/30)).
+
 ## [0.2.0] - 2024-07-11
 **Initial public plugin release. 🎉**
 
@@ -19,5 +29,6 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release.
 
 [Unreleased]: https://github.com/10up/embed-block-figma/compare/trunk...develop
+[0.3.0]: https://github.com/10up/embed-block-figma/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/10up/embed-block-figma/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/10up/embed-block-figma/tree/v0.1.0

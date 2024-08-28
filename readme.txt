@@ -2,7 +2,7 @@
 Contributors:      10up, dkotter, jeffpaul
 Tags:              gutenberg, figma, embed, blocks, custom blocks
 Tested up to:      6.6
-Stable tag:        0.2.0
+Stable tag:        0.3.0
 License:           GPL-2.0-or-later
 License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html
 
@@ -28,6 +28,12 @@ Once the plugin is installed and activated, you should see a new Figma Embed blo
 Assuming it's a valid URL, the block will automatically fetch the Figma file and display it in the editor. Once saved, this will also display on the front-end.
 
 == Changelog ==
+
+= 0.3.0 - 2024-08-29 =
+
+* **Added:** WordPress.org Playground preview (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#29](https://github.com/10up/embed-block-figma/pull/29)).
+* **Changed:** Updated plugin name from "Figma Block" to "Embed Block for Figma" (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#28](https://github.com/10up/embed-block-figma/pull/28), [#31](https://github.com/10up/embed-block-figma/pull/31)).
+* **Security:** Bump `webpack` from 5.90.3 to 5.94.0 (props [@dependabot](https://github.com/apps/dependabot), [@dkotter](https://github.com/dkotter) via [#30](https://github.com/10up/embed-block-figma/pull/30)).
 
 = 0.2.0 - 2024-07-11 =
 
