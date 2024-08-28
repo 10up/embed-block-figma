@@ -1,4 +1,4 @@
-=== Figma Block ===
+=== Embed Block for Figma ===
 Contributors:      10up, dkotter, jeffpaul
 Tags:              gutenberg, figma, embed, blocks, custom blocks
 Tested up to:      6.6
