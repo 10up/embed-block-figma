@@ -33,10 +33,10 @@ Assuming it's a valid URL, the block will automatically fetch the Figma file and
 
 **Initial public plugin release. 🎉**
 
-* **Changed:** Bump WordPress "tested up to" version 6.6 (props [@psorensen](https://github.com/psorensen), [@jeffpaul](https://github.com/jeffpaul) via [#21](https://github.com/10up/figma-block/pull/21)).
-* **Changed:** Updated documentation (props [@jeffpaul](https://github.com/jeffpaul) via [#17](https://github.com/10up/figma-block/pull/17)).
-* **Security:** Bump `braces` from 3.0.2 to 3.0.3 (props [@dependabot](https://github.com/apps/dependabot), [@psorensen](https://github.com/psorensen) via [#15](https://github.com/10up/figma-block/pull/15)).
-* **Security:** Bump `ws` from 7.5.9 to 7.5.10 (props [@dependabot](https://github.com/apps/dependabot), [@psorensen](https://github.com/psorensen) via [#15](https://github.com/10up/figma-block/pull/15)).
+* **Changed:** Bump WordPress "tested up to" version 6.6 (props [@psorensen](https://github.com/psorensen), [@jeffpaul](https://github.com/jeffpaul) via [#21](https://github.com/10up/embed-block-figma/pull/21)).
+* **Changed:** Updated documentation (props [@jeffpaul](https://github.com/jeffpaul) via [#17](https://github.com/10up/embed-block-figma/pull/17)).
+* **Security:** Bump `braces` from 3.0.2 to 3.0.3 (props [@dependabot](https://github.com/apps/dependabot), [@psorensen](https://github.com/psorensen) via [#15](https://github.com/10up/embed-block-figma/pull/15)).
+* **Security:** Bump `ws` from 7.5.9 to 7.5.10 (props [@dependabot](https://github.com/apps/dependabot), [@psorensen](https://github.com/psorensen) via [#15](https://github.com/10up/embed-block-figma/pull/15)).
 
 = 0.1.0 - 2024-06-25 =
 
