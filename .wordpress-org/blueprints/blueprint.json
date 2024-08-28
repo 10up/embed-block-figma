@@ -31,7 +31,7 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https:\/\/raw.githubusercontent.com\/10up\/figma-block\/develop/.wordpress-org\/blueprints\/demo-data.xml"
+        "url": "https:\/\/raw.githubusercontent.com\/10up\/embed-block-figma\/develop/.wordpress-org\/blueprints\/demo-data.xml"
       }
     }
   ]
