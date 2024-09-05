@@ -29,6 +29,10 @@ Assuming it's a valid URL, the block will automatically fetch the Figma file and
 
 == Changelog ==
 
+= 0.3.1 - 2024-09-05 =
+
+**Initial plugin release on WordPress.org 🎉**
+
 = 0.3.0 - 2024-08-29 =
 
 * **Added:** WordPress.org Playground preview (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#29](https://github.com/10up/embed-block-figma/pull/29)).

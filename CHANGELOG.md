@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [0.3.1] - 2024-09-05
+**Initial plugin release on WordPress.org 🎉**
+
+### Developer
+- Add banner image to the `README.md` file (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#34](https://github.com/10up/embed-block-figma/pull/34)).
+
 ## [0.3.0] - 2024-08-29
 ### Added
 - WordPress.org Playground preview (props [@thrijith](https://github.com/thrijith), [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#29](https://github.com/10up/embed-block-figma/pull/29)).
@@ -29,6 +35,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release.
 
 [Unreleased]: https://github.com/10up/embed-block-figma/compare/trunk...develop
+[0.3.1]: https://github.com/10up/embed-block-figma/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/10up/embed-block-figma/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/10up/embed-block-figma/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/10up/embed-block-figma/tree/v0.1.0
