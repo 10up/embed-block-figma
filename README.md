@@ -1,9 +1,11 @@
 # Embed Block for Figma
 
-> A Figma Block for the WordPress block editor (Gutenberg).
+![Figma Block](https://github.com/10up/embed-block-figma/blob/develop/.wordpress-org/banner-1544x500.png)
 
 [![Support Level](https://img.shields.io/badge/support-beta-blueviolet.svg)](#support-level) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v6.5%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/embed-block-figma.svg)](https://github.com/10up/embed-block-figma/blob/develop/LICENSE.md) [![WordPress Playground Demo](https://img.shields.io/github/v/release/10up/embed-block-figma?logo=wordpress&logoColor=FFFFFF&label=Playground%20Demo&labelColor=3858E9&color=3858E9)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/10up/embed-block-figma/trunk/.wordpress-org/blueprints/blueprint.json)
 [![Dependency Review](https://github.com/10up/embed-block-figma/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/10up/embed-block-figma/actions/workflows/dependency-review.yml) [![PHP Compatibility](https://github.com/10up/embed-block-figma/actions/workflows/php-compat.yml/badge.svg)](https://github.com/10up/embed-block-figma/actions/workflows/php-compat.yml) [![PHP Linting](https://github.com/10up/embed-block-figma/actions/workflows/phpcs.yml/badge.svg)](https://github.com/10up/embed-block-figma/actions/workflows/phpcs.yml) [![JS Linting](https://github.com/10up/embed-block-figma/actions/workflows/eslint.yml/badge.svg)](https://github.com/10up/embed-block-figma/actions/workflows/eslint.yml)
+
+> A Figma Block for the WordPress block editor (Gutenberg).
 
 ![Screenshot of the rendered Figma Embed block in the editor / admin](.wordpress-org/screenshot-2.png)
 
