@@ -1,6 +1,6 @@
 {
   "name": "embed-block-figma",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Adds a Figma embed block to the WordPress Block Editor.",
   "homepage": "https://github.com/10up/embed-block-figma",
   "license": "GPL-2.0-or-later",
