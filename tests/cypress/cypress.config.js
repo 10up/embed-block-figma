@@ -1,4 +1,5 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require('cypress');
+const path = require('path');
 
 module.exports = defineConfig({
 	chromeWebSecurity: false,
@@ -9,19 +10,14 @@ module.exports = defineConfig({
 	video: true,
 	reporter: 'mochawesome',
 	reporterOptions: {
-		mochaFile: "mochawesome-[name]",
-		reportDir: __dirname + "/reports",
+		mochaFile: 'mochawesome-[name]',
+		reportDir: path.join(__dirname, 'reports'),
 		overwrite: false,
 		html: false,
-		json: true
+		json: true,
 	},
 	e2e: {
-		// We've imported your old cypress plugins here.
-		// You may want to clean this up later by importing these.
-		setupNodeEvents(on, config) {
-			return require('./plugins/index.js')(on, config)
-		},
 		specPattern: 'tests/cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
-		supportFile: 'tests/cypress/support/index.js'
+		supportFile: 'tests/cypress/support/index.js',
 	},
-})
+});

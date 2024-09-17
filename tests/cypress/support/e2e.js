@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 // ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
@@ -13,10 +15,10 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-import "@10up/cypress-wp-utils";
+import '@10up/cypress-wp-utils';
 
 // Import commands.js using ES2015 syntax:
-import "./commands";
+import './commands';
 
 // Preserve WP cookies.
 beforeEach(() => {

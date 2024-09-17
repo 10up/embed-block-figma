@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 describe('Figma Embed Block', () => {
 	before(() => {
 		// Login to WordPress
@@ -16,7 +18,8 @@ describe('Figma Embed Block', () => {
 		cy.contains('Figma Embed').click();
 
 		// Enter a valid Figma URL in the block
-		const figmaUrl = 'https://www.figma.com/proto/ToHUf6DPOXqPLkZ5LOglFl/Sample-Embed?node-id=1%3A2&scaling=scale-down';
+		const figmaUrl =
+			'https://www.figma.com/proto/ToHUf6DPOXqPLkZ5LOglFl/Sample-Embed?node-id=1%3A2&scaling=scale-down';
 		cy.get('input[placeholder="Enter Figma URL"]').type(figmaUrl);
 
 		// Verify that the block fetches and displays the Figma file in the editor
