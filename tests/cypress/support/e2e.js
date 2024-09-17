@@ -20,7 +20,7 @@ import "./commands";
 
 // Preserve WP cookies.
 beforeEach(() => {
-  Cypress.Cookies.defaults({
-    preserve: /^wordpress.*?/,
-  });
+	Cypress.Cookies.defaults({
+		preserve: /^wordpress.*?/,
+	});
 });
