@@ -21,12 +21,12 @@ jobs:
       matrix:
         core:
           - {name: 'WP latest', version: 'latest'}
-          - {name: 'WP minimum', version: 'WordPress/WordPress#5.7'}
+          - {name: 'WP minimum', version: 'WordPress/WordPress#6.4'}
           - {name: 'WP trunk', version: 'WordPress/WordPress#master'}
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Download build zip
       uses: actions/download-artifact@v4
       with:
@@ -37,7 +37,7 @@ jobs:
       working-directory: ${{ github.event.repository.name }}
     - name: Cache node_modules
       id: cache-node-modules
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       env:
         cache-name: cache-node-modules
       with:
@@ -47,9 +47,7 @@ jobs:
           ~/.npm
         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
     - name: Install dependencies
-      run: npm install
-    - name: Composer
-      run: composer install
+      run: npm ci
     - name: Set the core version and plugins config
       run: ./tests/bin/set-wp-config.js --core=${{ matrix.core.version }} --plugins=./${{ github.event.repository.name }},./tests/cypress/test-plugin
     - name: Set up WP environment
