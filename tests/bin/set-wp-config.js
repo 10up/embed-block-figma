@@ -1,38 +1,46 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const { exit } = require('process');
-const path = require('path'); // Use path for file paths
+const fs = require( 'fs' );
 
-const configPath = path.join(process.cwd(), '.wp-env.override.json');
-let config = {};
+const path = `${ process.cwd() }/.wp-env.json`;
 
-if (fs.existsSync(configPath)) {
-	// Avoid dynamic require; use fs.readFileSync and JSON.parse instead
-	const fileContent = fs.readFileSync(configPath, 'utf8');
-	config = JSON.parse(fileContent);
+let config = fs.existsSync( path ) ? require( path ) : { plugins: [ '.', 'https://downloads.wordpress.org/plugin/classic-editor.zip' ] };
+
+const args = {};
+process.argv
+    .slice(2, process.argv.length)
+    .forEach( arg => {
+        if (arg.slice(0,2) === '--') {
+            const param = arg.split('=');
+            const paramName = param[0].slice(2,param[0].length);
+            const paramValue = param.length > 1 ? param[1] : true;
+            args[paramName] = paramValue;
+        }
+    });
+
+if ( ! args.core && ! args.plugins ) {
+    return;
 }
 
-const args = process.argv.slice(2);
-
-if (args.length === 0) exit(0);
-
-if (args[0] === 'latest') {
-	if (fs.existsSync(configPath)) {
-		fs.unlinkSync(configPath);
-	}
-	exit(0);
+if ( 'latest' === args.core ) {
+    delete args.core;
 }
 
-config.core = args[0];
+if( Object.keys(args).length === 0 ) {
+    return;
+}
 
-if (!config.core.match(/^WordPress\/WordPress#/)) {
-	config.core = `WordPress/WordPress#${config.core}`;
+if ( args.plugins ) {
+    args.plugins = args.plugins.split(',');
+}
+
+config = {
+    ...config,
+    ...args,
 }
 
 try {
-	fs.writeFileSync(configPath, JSON.stringify(config, null, 2)); // Added indentation for prettier
-} catch (err) {
-	// eslint-disable-next-line no-console
-	console.error(err);
+   fs.writeFileSync( path, JSON.stringify( config ) );
+} catch ( err ) {
+    console.error( err );
 }
