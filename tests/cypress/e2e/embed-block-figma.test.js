@@ -1,12 +1,8 @@
 /* eslint-disable no-undef */
 
 describe('Figma Embed Block', () => {
-	before(() => {
-		cy.login();
-	});
-
 	beforeEach(() => {
-		// Navigate to the Block Editor
+		cy.login();
 		cy.visit('/wp-admin/post-new.php');
 		cy.get('.block-editor-writing-flow', { timeout: 10000 }).should('exist'); // Ensure editor loads
 	});
