@@ -2,8 +2,7 @@
 
 describe('Figma Embed Block', () => {
 	before(() => {
-		// Login to WordPress
-		cy.loginToWordPress();
+		cy.login();
 	});
 
 	beforeEach(() => {
