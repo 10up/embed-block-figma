@@ -2,7 +2,7 @@
 
 describe('Figma Embed Block', () => {
 	before(() => {
-		cy.login(); // Assumes a custom login command is available
+		cy.login();
 	});
 
 	beforeEach(() => {
