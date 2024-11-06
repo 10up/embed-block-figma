@@ -1,18 +1,23 @@
 const { defineConfig } = require('cypress');
+const path = require('path');
 
 module.exports = defineConfig({
 	chromeWebSecurity: false,
-	fixturesFolder: `${__dirname}/fixtures`,
-	screenshotsFolder: `${__dirname}/screenshots`,
-	videosFolder: `${__dirname}/videos`,
-	downloadsFolder: `${__dirname}/downloads`,
-	video: false,
+	fixturesFolder: 'tests/cypress/fixtures',
+	screenshotsFolder: 'tests/cypress/screenshots',
+	videosFolder: 'tests/cypress/videos',
+	downloadsFolder: 'tests/cypress/downloads',
+	video: true,
+	reporter: 'mochawesome',
+	reporterOptions: {
+		mochaFile: 'mochawesome-[name]',
+		reportDir: path.join(__dirname, 'reports'),
+		overwrite: false,
+		html: false,
+		json: true,
+	},
 	e2e: {
-		setupNodeEvents(on, config) {
-			// eslint-disable-next-line import/no-dynamic-require, global-require
-			return require(`${__dirname}/plugins/index.js`)(on, config);
-		},
-		specPattern: `${__dirname}/e2e/*.test.{js,jsx,ts,tsx}`,
-		supportFile: `${__dirname}/support/index.js`,
+		specPattern: 'tests/cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+		supportFile: 'tests/cypress/support/index.js',
 	},
 });
