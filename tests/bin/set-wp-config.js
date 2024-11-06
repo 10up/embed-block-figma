@@ -8,7 +8,7 @@ let config;
 if (fs.existsSync(path)) {
 	config = JSON.parse(fs.readFileSync(path, 'utf-8'));
 } else {
-	config = { plugins: ['.', 'https://downloads.wordpress.org/plugin/classic-editor.zip'] };
+	config = { plugins: ['.'] };
 }
 
 const args = {};
