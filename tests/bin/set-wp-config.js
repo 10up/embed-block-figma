@@ -4,20 +4,23 @@ const fs = require('fs');
 
 const path = `${process.cwd()}/.wp-env.json`;
 
-let config = fs.existsSync(path) ? require(path) : { plugins: ['.', 'https://downloads.wordpress.org/plugin/classic-editor.zip'] };
+let config;
+if (fs.existsSync(path)) {
+	config = JSON.parse(fs.readFileSync(path, 'utf-8'));
+} else {
+	config = { plugins: ['.', 'https://downloads.wordpress.org/plugin/classic-editor.zip'] };
+}
 
 const args = {};
-process.argv.slice(2, process.argv.length).forEach((arg) => {
-	if (arg.slice(0, 2) === '--') {
-		const param = arg.split('=');
-		const paramName = param[0].slice(2, param[0].length);
-		const paramValue = param.length > 1 ? param[1] : true;
+process.argv.slice(2).forEach((arg) => {
+	if (arg.startsWith('--')) {
+		const [paramName, paramValue = true] = arg.slice(2).split('=');
 		args[paramName] = paramValue;
 	}
 });
 
 if (!args.core && !args.plugins) {
-	process.exit(); // Exit instead of return
+	process.exit();
 }
 
 if (args.core === 'latest') {
@@ -25,7 +28,7 @@ if (args.core === 'latest') {
 }
 
 if (Object.keys(args).length === 0) {
-	process.exit(); // Exit instead of return
+	process.exit();
 }
 
 if (args.plugins) {
