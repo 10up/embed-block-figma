@@ -17,8 +17,8 @@
     "lint-style": "10up-toolkit lint-style",
     "test": "10up-toolkit test-unit-jest",
     "clean-dist": "rm -rf ./dist",
-    "cypress:open": "cypress open --config-file tests/cypress/cypress.config.js",
-    "cypress:run": "cypress run --config-file tests/cypress/cypress.config.js",
+    "cypress:open": "cypress open --browser chrome --config-file tests/cypress/cypress.config.js",
+    "cypress:run": "cypress run --browser chrome --config-file tests/cypress/cypress.config.js",
     "env": "wp-env",
     "env:start": "wp-env start",
     "env:stop": "wp-env stop",
@@ -34,11 +34,9 @@
     "@wordpress/env": "^10.3.0",
     "10up-toolkit": "6.0.0",
     "classnames": "^2.3.2",
-    "cypress": "^13.13.0",
-    "cypress-mochawesome-reporter": "^3.4.0",
+    "cypress": "^13.13.3",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "mochawesome-json-to-md": "^0.7.2",
     "prettier": "3.2.5"
   },
   "husky": {
