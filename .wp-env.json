@@ -1,1 +1,10 @@
-{"plugins":["./embed-block-figma"],"env":{"tests":{"mappings":{"wp-cli.yml":"./tests/bin/wp-cli.yml"}}},"core":"WordPress/WordPress#6.5"}
+{
+  "plugins": ["."],
+  "env": {
+    "tests": {
+      "mappings": {
+        "wp-cli.yml": "./tests/bin/wp-cli.yml"
+      }
+    }
+  }
+}
