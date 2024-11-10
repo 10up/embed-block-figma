@@ -1,10 +1,21 @@
 /* eslint-disable no-undef */
 
 describe('Figma Embed Block', () => {
+	before(() => {
+		cy.login(); // Custom login command, if available
+	});
+
 	beforeEach(() => {
-		cy.login();
+		// Navigate to the Block Editor and ensure it fully loads
 		cy.visit('/wp-admin/post-new.php');
-		cy.get('.block-editor-writing-flow', { timeout: 20000 }).should('exist'); // Ensure editor loads
+		cy.url().should('include', '/post-new.php');
+
+		// Wait for the Block Editor to load completely
+		cy.wait(5000); // Add a slight delay
+		cy.get('body').should('not.have.class', 'is-loading'); // Check if editor is ready
+
+		// Check for the presence of block editor with alternative selector
+		cy.get('div[role="region"] .block-editor-writing-flow', { timeout: 20000 }).should('exist');
 	});
 
 	it('should add Figma Embed block and verify embedding a Figma URL', () => {
