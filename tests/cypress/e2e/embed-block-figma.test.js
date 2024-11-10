@@ -14,7 +14,8 @@ context('Figma Embed Block', () => {
 	});
 
 	it('Embeds a valid Figma URL', () => {
-		const figmaUrl = 'https://embed.figma.com/design/nrPSsILSYjesyc5UHjYYa4?embed-host=figma-embed-docs';
+		const figmaUrl =
+			'https://embed.figma.com/design/nrPSsILSYjesyc5UHjYYa4?embed-host=figma-embed-docs';
 		cy.get('.wp-block-embed[data-title="Figma"] form input').type(figmaUrl, { force: true });
 		cy.get('.wp-block-embed[data-title="Figma"] form').submit();
 
