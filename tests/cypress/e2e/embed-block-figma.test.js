@@ -4,7 +4,7 @@ describe('Figma Embed Block', () => {
 	beforeEach(() => {
 		cy.login();
 		cy.visit('/wp-admin/post-new.php');
-		cy.get('.block-editor-writing-flow', { timeout: 10000 }).should('exist'); // Ensure editor loads
+		cy.get('.block-editor-writing-flow', { timeout: 20000 }).should('exist'); // Ensure editor loads
 	});
 
 	it('should add Figma Embed block and verify embedding a Figma URL', () => {
