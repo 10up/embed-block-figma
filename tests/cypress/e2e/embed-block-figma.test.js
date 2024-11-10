@@ -5,7 +5,7 @@ context('Figma Embed Block', () => {
 	beforeEach(() => {
 		cy.loginToWordPress();
 		cy.createPost({ title: 'Figma Embed Example' });
-		cy.insertBlock('Figma Embed');
+		cy.insertBlock('Figma');
 	});
 
 	it('Displays the Figma Embed block', () => {
