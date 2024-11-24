@@ -7,7 +7,7 @@ Cypress.Commands.add('setLocalStorage', (key, value) => {
 });
 
 Cypress.Commands.add('createPost', (options = {}) => {
-	const { postType = 'page', title = '' } = options;
+	const { postType = 'post', title = '' } = options;
 	const userId = '1';
 
 	cy.setLocalStorage(
@@ -74,26 +74,4 @@ Cypress.Commands.add('insertBlock', (blockName) => {
 	cy.get('button[aria-label="Add block"]').first().click();
 	cy.focused().type(blockName);
 	cy.get('button').contains(blockName).click();
-});
-
-Cypress.Commands.add('openSettingsSidebar', () => {
-	cy.get('button[aria-label="Settings"]').click();
-});
-
-Cypress.Commands.add('deletePost', () => {
-	cy.get('button[aria-label="Settings"][aria-expanded="false"]').click();
-	cy.get('button[aria-label="Page"].edit-post-sidebar__panel-tab').click();
-	cy.get('button').contains('Move to trash').click();
-});
-
-Cypress.Commands.add('goToAdmin', () => {
-	cy.get('#wp-admin-bar-site-name #wp-admin-bar-dashboard > a').click({ force: true });
-});
-
-Cypress.Commands.add('updatePost', () => {
-	cy.get('[type="button"]').then(($button) => {
-		if ($button.val() === 'Update' || $button.val() === 'Publish') {
-			cy.wrap($button).click();
-		}
-	});
 });
