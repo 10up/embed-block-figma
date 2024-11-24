@@ -1,24 +1,5 @@
 /* eslint-disable no-undef */
 
-Cypress.Commands.add('loginToWordPress', () => {
-	cy.visit('/wp-admin');
-
-	cy.url().then((url) => {
-		if (url.includes('wp-login.php')) {
-			cy.wait(400);
-
-			const userName = Cypress.env('username');
-			const password = Cypress.env('password');
-
-			cy.get('#user_login').type(userName, { delay: 50 });
-			cy.get('#user_pass').type(password, { delay: 50 });
-			cy.get('[type="submit"]').click();
-		}
-	});
-
-	cy.url().should('include', 'wp-admin');
-});
-
 Cypress.Commands.add('createPost', (options = {}) => {
 	const { postType = 'page', title = '' } = options;
 	const userId = '1';
