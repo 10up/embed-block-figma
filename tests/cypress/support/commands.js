@@ -10,6 +10,10 @@ Cypress.Commands.add('setLocalStorage', (key, value) => {
 // Create a new post
 Cypress.Commands.add('createPost', ({ title = '' } = {}) => {
 	cy.visit('/wp-admin/post-new.php');
+
+	// Wait for the editor to load
+	cy.get('.editor-post-title__input', { timeout: 10000 }).should('be.visible');
+
 	if (title) {
 		cy.get('.editor-post-title__input').type(`${title} - ${Date.now()}`);
 	}
