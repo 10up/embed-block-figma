@@ -1,5 +1,11 @@
 /* eslint-disable no-undef */
 
+Cypress.Commands.add('setLocalStorage', (key, value) => {
+	cy.window().then((win) => {
+		win.localStorage.setItem(key, value);
+	});
+});
+
 Cypress.Commands.add('createPost', (options = {}) => {
 	const { postType = 'page', title = '' } = options;
 	const userId = '1';
