@@ -34,3 +34,9 @@ Thumbs.db
 Desktop.ini
 /debug.log
 /db.php
+
+# Tests
+tests/cypress/downloads
+tests/cypress/screenshots
+tests/cypress/videos
+tests/cypress/reports
