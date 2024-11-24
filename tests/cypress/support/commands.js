@@ -1,32 +1,19 @@
 /* eslint-disable no-undef */
 
-// Add local storage item
-Cypress.Commands.add('setLocalStorage', (key, value) => {
-	cy.window().then((win) => {
-		win.localStorage.setItem(key, JSON.stringify(value));
-	});
+Cypress.Commands.add('embedFigmaURL', (url) => {
+	cy.get('.wp-block-embed[data-title="Figma"] form input').clear().type(url).blur();
+	cy.get('.wp-block-embed[data-title="Figma"] form').submit();
+
+	// Wait for the preview to load or an error message to appear
+	cy.wait(1000);
 });
 
-// Create a new post
-Cypress.Commands.add('createPost', ({ title = '' } = {}) => {
-	cy.visit('/wp-admin/post-new.php');
-
-	// Wait for the editor to load
-	cy.get('.editor-post-title__input', { timeout: 10000 }).should('be.visible');
-
-	if (title) {
-		cy.get('.editor-post-title__input').type(`${title} - ${Date.now()}`);
-	}
+Cypress.Commands.add('clickPublish', () => {
+	cy.get('.editor-post-publish-panel__toggle').click();
 });
 
-// Save the post
-Cypress.Commands.add('savePost', () => {
-	cy.get('button').contains('Publish').click();
-});
-
-// Insert a Gutenberg block
 Cypress.Commands.add('insertBlock', (blockName) => {
-	cy.get('button[aria-label="Add block"]').click();
-	cy.get('.block-editor-inserter__search input').type(blockName);
-	cy.contains('.block-editor-block-types-list__item', blockName).click();
+	cy.get('button[aria-label="Add block"]').first().click();
+	cy.focused().type(blockName);
+	cy.get('button[role="menuitem"]').contains(blockName).click();
 });
