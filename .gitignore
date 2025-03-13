@@ -36,7 +36,4 @@ Desktop.ini
 /db.php
 
 # Tests
-tests/cypress/downloads
-tests/cypress/screenshots
-tests/cypress/videos
-tests/cypress/reports
+tests/**
