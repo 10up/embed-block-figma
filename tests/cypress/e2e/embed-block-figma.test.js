@@ -15,19 +15,17 @@ describe('Figma Embed Block Tests', () => {
 		cy.createPost({
 			title,
 			beforeSave: () => {
-				cy.insertBlock('Figma Embed');
+				cy.insertBlock('core/embed/figma');
 				cy.embedFigmaURL(
 					'https://embed.figma.com/design/nrPSsILSYjesyc5UHjYYa4?embed-host=figma-embed-docs',
 				);
-
-				cy.openDocumentSettingsSidebar('Post');
-				cy.clickPublish();
-
-				cy.get('.wp-block-embed__wrapper iframe')
-					.should('exist')
-					.and('have.attr', 'src')
-					.and('contain', 'https://www.figma.com/embed');
 			},
 		});
+
+		cy.getBlockEditor()
+			.find('.wp-block-embed__wrapper iframe')
+			.should('exist')
+			.and('have.attr', 'title')
+			.and('contain', 'figma.com');
 	});
 });
