@@ -11,7 +11,7 @@
   "steps": [
     {
       "step": "login",
-      "username": "admin",
+      "username": "admin"
     },
     {
       "step": "installPlugin",
