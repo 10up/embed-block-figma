@@ -37,7 +37,7 @@
 
 		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@localhost.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
-				
+
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 
 		<item>
@@ -47,9 +47,9 @@
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://playground.wordpress.net/scope:0.1624312760462985/?page_id=7</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:embed {"url":"https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-Filesss","type":"rich","providerNameSlug":"figma","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
+		<content:encoded><![CDATA[<!-- wp:embed {"url":"https://www.figma.com/proto/nrPSsILSYjesyc5UHjYYa4/Embed-Kit-2.0-examples?node-id=5-3&starting-point-node-id=5%3A3","type":"rich","providerNameSlug":"figma","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-rich is-provider-figma wp-block-embed-figma wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-Filesss
+https://www.figma.com/proto/nrPSsILSYjesyc5UHjYYa4/Embed-Kit-2.0-examples?node-id=5-3&starting-point-node-id=5%3A3
 </div></figure>
 <!-- /wp:embed -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -74,4 +74,3 @@ https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-Filesss
 							</item>
 				</channel>
 </rss>
-	
