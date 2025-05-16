@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 ### Security
 - Bump `express` from 4.21.1 to 4.21.2 (props [@dependabot](https://github.com/apps/dependabot), [@dkotter](https://github.com/dkotter) via [#47](https://github.com/10up/embed-block-figma/pull/47)).
 - Bump `body-parser` from 1.20.2 to 1.20.3 (props [@dependabot](https://github.com/apps/dependabot), [@iamdharmesh](https://github.com/iamdharmesh) via [#38](https://github.com/10up/embed-block-figma/pull/38)).
+- Bump `http-proxy-middleware` from 2.0.7 to 2.0.9 and `tar-fs` from 2.1.1 to 3.0.8 (props [@dependabot](https://github.com/apps/dependabot), [@dkotter](https://github.com/dkotter) via [#53](https://github.com/10up/embed-block-figma/pull/53)).
 
 ### Developer
 - Add E2E tests (props [@sksaju](https://github.com/sksaju), [@jeffpaul](https://github.com/jeffpaul), [@iamdharmesh](https://github.com/iamdharmesh), [@dkotter](https://github.com/dkotter) via [#37](https://github.com/10up/embed-block-figma/pull/37)).
