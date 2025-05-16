@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file, per [the Ke
 
 ## [Unreleased] - TBD
 
+## [0.4.0] - 2025-05-19
+**Note that this release bumps the WordPress minimum version from 6.4 to 6.6.**
+
+### Changed
+- Bump WordPress "tested up to" version 6.8 (props [@thrijith](https://github.com/thrijith), [@jeffpaul](https://github.com/jeffpaul) via [#42](https://github.com/10up/embed-block-figma/pull/42), [#43](https://github.com/10up/embed-block-figma/pull/43), [#48](https://github.com/10up/embed-block-figma/pull/48), [#49](https://github.com/10up/embed-block-figma/pull/49)).
+- Bump WordPress "requires at least" version 6.6 (props [@thrijith](https://github.com/thrijith), [@jeffpaul](https://github.com/jeffpaul) via [#42](https://github.com/10up/embed-block-figma/pull/42), [#43](https://github.com/10up/embed-block-figma/pull/43), [#48](https://github.com/10up/embed-block-figma/pull/48), [#49](https://github.com/10up/embed-block-figma/pull/49)).
+- Bump Support Level from `Beta` to `Stable` (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#52](https://github.com/10up/embed-block-figma/pull/52)).
+
+### Security
+- Bump `express` from 4.21.1 to 4.21.2 (props [@dependabot](https://github.com/apps/dependabot), [@dkotter](https://github.com/dkotter) via [#47](https://github.com/10up/embed-block-figma/pull/47)).
+- Bump `body-parser` from 1.20.2 to 1.20.3 (props [@dependabot](https://github.com/apps/dependabot), [@iamdharmesh](https://github.com/iamdharmesh) via [#38](https://github.com/10up/embed-block-figma/pull/38)).
+
+### Developer
+- Add E2E tests (props [@sksaju](https://github.com/sksaju), [@jeffpaul](https://github.com/jeffpaul), [@iamdharmesh](https://github.com/iamdharmesh), [@dkotter](https://github.com/dkotter) via [#37](https://github.com/10up/embed-block-figma/pull/37)).
+- Update badges in the `README.md` file (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#39](https://github.com/10up/embed-block-figma/pull/39), [#51](https://github.com/10up/embed-block-figma/pull/51)).
+- Update the plugin preview blueprint to fix errors (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#50](https://github.com/10up/embed-block-figma/pull/50)).
+- Update all third-party actions our workflows rely on to use versions based on specific commit hashes (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#45](https://github.com/10up/embed-block-figma/pull/45)).
+
 ## [0.3.1] - 2024-09-05
 **Initial plugin release on WordPress.org 🎉**
 
@@ -35,6 +53,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial private plugin release.
 
 [Unreleased]: https://github.com/10up/embed-block-figma/compare/trunk...develop
+[0.4.0]: https://github.com/10up/embed-block-figma/compare/0.3.1...0.4.0
 [0.3.1]: https://github.com/10up/embed-block-figma/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/10up/embed-block-figma/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/10up/embed-block-figma/compare/0.1.0...0.2.0
