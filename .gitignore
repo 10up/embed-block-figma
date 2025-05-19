@@ -34,3 +34,6 @@ Thumbs.db
 Desktop.ini
 /debug.log
 /db.php
+
+# Tests
+tests/**
