@@ -1,5 +1,3 @@
-permissions:
-  contents: read
 name: JS Linting
 
 on:
@@ -14,6 +12,9 @@ on:
       - develop
     paths:
       - '**.js'
+
+permissions:
+  contents: read
 
 jobs:
   eslint:

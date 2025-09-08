@@ -1,11 +1,12 @@
-permissions:
-  contents: read
 name: E2E test
 
 on:
   pull_request:
     branches:
       - develop
+
+permissions:
+  contents: read
 
 jobs:
   build:
