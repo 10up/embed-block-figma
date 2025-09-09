@@ -13,6 +13,9 @@ on:
     paths:
       - '**.js'
 
+permissions:
+  contents: read
+
 jobs:
   eslint:
     runs-on: ubuntu-latest
