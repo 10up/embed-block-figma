@@ -36,6 +36,12 @@ Assuming it's a valid URL, the block will automatically fetch the Figma file and
 
 ![Screenshot of the front-end rendering of the Figma Embed block](.wordpress-org/screenshot-4.png)
 
+## Frequently Asked Questions
+
+### Where do I report security bugs found in this plugin?
+
+Please report security bugs found in the source code of the Embed Block for Figma plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/acbbc0ae-d2ee-48b9-b857-3bb5e49ef6bc).  The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 ## Support Level
 
 **Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns. We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.
