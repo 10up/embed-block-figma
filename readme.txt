@@ -14,18 +14,24 @@ Display Figma files using an Embed block.
 * Paste a Figma URL on a new line in the Block Editor to automatically convert it to a Figma Embed block.
 * Block settings allow for altering margins of rendered Figma file embed
 
+== Getting Started ==
+
+Once the plugin is installed and activated, you should see a new Figma Embed block. Insert this block into your content and enter the URL of the Figma file you want to embed.
+
+Assuming it's a valid URL, the block will automatically fetch the Figma file and display it in the editor. Once saved, this will also display on the front-end.
+
+== Frequently Asked Questions ==
+
+= Where do I report security bugs found in this plugin? =
+
+Please report security bugs found in the source code of the Embed Block for Figma plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/acbbc0ae-d2ee-48b9-b857-3bb5e49ef6bc).  The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 == Screenshots ==
 
 1. The Figma Embed block with sample URL pre-embed.
 2. The rendered Figma Embed block in the editor / admin.
 3. The Figma Embed block settings prior to rendering in the editor / admin.
 4. Front-end rendering of the Figma Embed block.
-
-== Getting Started ==
-
-Once the plugin is installed and activated, you should see a new Figma Embed block. Insert this block into your content and enter the URL of the Figma file you want to embed.
-
-Assuming it's a valid URL, the block will automatically fetch the Figma file and display it in the editor. Once saved, this will also display on the front-end.
 
 == Changelog ==
 
