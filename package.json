@@ -28,7 +28,7 @@
     "postarchive": "rm -rf embed-block-figma && unzip embed-block-figma.zip -d embed-block-figma && rm embed-block-figma.zip && zip -r embed-block-figma.zip embed-block-figma && rm -rf embed-block-figma"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "devDependencies": {
     "@10up/cypress-wp-utils": "^0.6.0",
