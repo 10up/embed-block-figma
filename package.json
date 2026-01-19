@@ -28,14 +28,14 @@
     "postarchive": "rm -rf embed-block-figma && unzip embed-block-figma.zip -d embed-block-figma && rm embed-block-figma.zip && zip -r embed-block-figma.zip embed-block-figma && rm -rf embed-block-figma"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@10up/cypress-wp-utils": "^0.5.0",
-    "@wordpress/env": "^10.3.0",
-    "10up-toolkit": "^6.5.0",
+    "@10up/cypress-wp-utils": "^0.6.0",
+    "@wordpress/env": "^10.38.0",
+    "10up-toolkit": "^6.5.1",
     "classnames": "^2.3.2",
-    "cypress": "^13.13.3",
+    "cypress": "^15.9.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5"

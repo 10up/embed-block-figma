@@ -12,10 +12,21 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-const { loadConfig } = require('@wordpress/env/lib/config');
-const getCacheDirectory = require('@wordpress/env/lib/config/get-cache-directory');
+const path = require('path');
+
+// Resolve the package directory
+const wpEnvPackagePath = require.resolve('@wordpress/env/package.json');
+const wpEnvLibPath = path.join(path.dirname(wpEnvPackagePath), 'lib');
+
+// Directly require the files using their resolved paths
+// eslint-disable-next-line import/no-dynamic-require
+const { loadConfig } = require(path.join(wpEnvLibPath, 'config', 'index.js'));
+// eslint-disable-next-line import/no-dynamic-require
+const getCacheDirectory = require(path.join(wpEnvLibPath, 'config', 'get-cache-directory.js'));
 
 /**
+ * Update the config to include the base url defined by WP-Env.
+ *
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
