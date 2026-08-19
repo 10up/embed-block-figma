@@ -51,7 +51,9 @@ jobs:
         run: composer install --prefer-dist
 
       - name: Run PHP_CodeSniffer
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
         run: |
           HEAD_REF=$(git rev-parse HEAD)
           git checkout $HEAD_REF
-          ./vendor/bin/phpcs-changed -s --git --git-base origin/${{ github.base_ref }} ${{ steps.changed-files.outputs.all_changed_files }}
+          ./vendor/bin/phpcs-changed -s --git --git-base origin/$GITHUB_BASE_REF ${{ steps.changed-files.outputs.all_changed_files }}
