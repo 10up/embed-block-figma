@@ -34,7 +34,7 @@
     "@playwright/test": "1.65.1",
     "@wordpress/e2e-test-utils-playwright": "3.3.0",
     "@wordpress/env": "12.2.0",
-    "10up-toolkit": "^6.5.1",
+    "10up-toolkit": "^7.0.0",
     "classnames": "^2.3.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
