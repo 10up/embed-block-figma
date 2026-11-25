@@ -22,7 +22,10 @@
   "require-dev": {
     "10up/phpcs-composer": "^3.0",
     "sirbrillig/phpcs-changed": "^2.11",
-    "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
+    "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
+    "phpunit/phpunit": "^9.6",
+    "yoast/phpunit-polyfills": "^4.0",
+    "wp-phpunit/wp-phpunit": "^7.1"
   },
   "scripts": {
     "lint": "phpcs .",
