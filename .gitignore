@@ -36,7 +36,6 @@ Desktop.ini
 /db.php
 
 # Tests
-/tests/cypress/downloads
-/tests/cypress/screenshots
-/tests/cypress/reports
-/tests/cypress/videos
+/artifacts
+tests/.phpunit.result.cache
+.wp-env.test.override.json
