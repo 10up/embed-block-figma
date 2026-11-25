@@ -125,7 +125,7 @@ jobs:
         run: |
           cat > .wp-env.test.override.json <<'JSON'
           {
-            "plugins": [ "./release/embed-block-figma" ],
+            "plugins": [ "./release/embed-block-figma", "./tests/e2e-plugins/embed-block-figma-e2e-helpers" ],
             "mappings": {
               "/wp-content/plugins/embed-block-figma": "./release/embed-block-figma"
             }

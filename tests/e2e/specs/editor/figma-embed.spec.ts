@@ -1,5 +1,6 @@
 /**
- * Editor: the Figma embed variation can be inserted and previews a Figma URL.
+ * Editor: the Figma embed variation can be inserted and previews a Figma URL,
+ * and a pasted Figma URL becomes that variation.
  */
 
 /**
@@ -43,5 +44,32 @@ test.describe( 'Figma embed block', () => {
 		await expect(
 			block.locator( '.wp-block-embed__wrapper iframe' )
 		).toHaveAttribute( 'title', /figma\.com/ );
+	} );
+
+	test( 'turns a pasted Figma URL into the Figma embed block', async ( {
+		admin,
+		editor,
+		page,
+		pageUtils,
+	} ) => {
+		// Fail the preview request: a successful preview would label a
+		// generic embed block "Figma" too, hiding a broken paste pattern.
+		await page.route( /oembed(\/|%2F)1\.0(\/|%2F)proxy/, ( route ) =>
+			route.abort()
+		);
+
+		await admin.createNewPost( { title: 'Figma Paste' } );
+		await editor.canvas
+			.getByRole( 'button', { name: 'Add default block' } )
+			.click();
+		pageUtils.setClipboardData( {
+			plainText:
+				'https://www.figma.com/design/nrPSsILSYjesyc5UHjYYa4/Project-Name?node-id=1-2',
+		} );
+		await pageUtils.pressKeys( 'primary+v' );
+
+		await expect(
+			editor.canvas.locator( '.wp-block-embed[data-title="Figma"]' )
+		).toBeVisible();
 	} );
 } );
