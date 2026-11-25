@@ -2,7 +2,9 @@
 /.git
 /.github
 /.wordpress-org
+/artifacts
 /node_modules
+/release
 /src
 /tests
 
@@ -19,4 +21,5 @@
 /package.json
 /phpcs-compat.xml
 /phpcs.xml
+/phpunit.xml.dist
 /README.md
