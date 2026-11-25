@@ -24,7 +24,7 @@ jobs:
 
       - name: Build
         run: |
-          npm ci --no-optional
+          npm ci
           npm run build
           composer install --no-dev -o
 
